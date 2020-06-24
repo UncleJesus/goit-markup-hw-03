@@ -1,0 +1,273 @@
+/* ПОЛИТРА ЦВЕТОВ
+color: #2196f3;
+color: #000000;
+color: #757575;
+color: #ffffff;
+background: rgba(47, 48, 58, 0.8); */
+
+body {
+  font-family: Roboto, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* БЛОК НАВИГАЦИИ */
+.nav__link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.nav__link:hover,
+.nav__link:focus {
+  color: #2196f3;
+}
+.nav__items .nav__link.current {
+  color: #2196f3;
+}
+
+.list__item-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #757575;
+}
+.list__item-text:hover,
+.list__item-text:focus {
+  color: #2196f3;
+}
+
+/* CSS WEB STUDIO */
+
+/* НАДПИСЬ - Эффективные решения для вашего бизнеса */
+.container__hero .hero__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #757575;
+}
+
+/* КНОПКА- Заказать Услугу */
+
+.container__hero .hero__link {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 2;
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background-color: #2196f3;
+  border-style: solid;
+  border-color: #2196f3;
+}
+
+/* КОНТЕЙНЕР-ОСОБЕННОСТИ */
+
+.container .container__title-features {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.container .container__text-features {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* СЕКЦИЯ ЧЕМ МЫ ЗАНИМАЕМСЯ */
+.wwd__sect .container__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.wwd__sect .container__subtitle {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+/* КАРТОЧКИ КОМАНДЫ */
+.team__sect .container__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team__sect .container__subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+.team__sect .container__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.team__sect .socialmedia__icon {
+}
+
+/* СЕКЦИЯ КЛИЕНТОВ */
+.clients__sect .container__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #757575;
+}
+.address {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer .footer__email {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer .footer__phone {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.join .join__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+.subscribe .subscribe__text {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.footer__button .button {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+  letter-spacing: 0.06em;
+  background-color: #2196f3;
+  border-style: solid;
+  border-color: #2196f3;
+  color: #ffffff;
+}
+
+/* PORTFOLIO CSS */
+.section__filter .filter__btn {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #f5f4fa;
+  border-style: solid;
+  border-color: #757575;
+}
+.filter__btn:hover,
+.filter__btn:focus {
+  color: #2196f3;
+}
+.section__blocks .block__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.section__blocks .block__subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.section__blocks .block__text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  background-color: #2196f3;
+}
