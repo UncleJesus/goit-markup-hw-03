@@ -21,6 +21,13 @@ a {
 
 /* HEADER */
 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
 /*Лого*/
 .logo {
   color: #212121;
@@ -34,21 +41,17 @@ a {
   color: #2196f3;
 }
 
-/*Контакты*/
-.contacts .item {
-  color: var(--primary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-}
-.contacts .item:hover,
-.contacts .item:focus {
-  color: var(--accent-color);
-}
 /*Навигация*/
+.site-nav {
+  display: flex;
+}
+.site-nav .item:not(:last-child) {
+  margin-right: 50px;
+}
 .site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -62,35 +65,71 @@ a {
 .site-nav .current {
   color: var(--accent-color);
 }
+.list {
+  margin: 0px;
+  padding: 0px;
+}
 
+/*Контакты*/
+.site-cont .address {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+.site-cont {
+  display: flex;
+}
+.site-cont .item + .item {
+  margin-left: 30px;
+}
+.site-cont .address:hover,
+.site-cont .address:focus {
+  color: var(--accent-color);
+}
 /* WEB STUDIO CSS */
 
 /* БЛОК ГЕРОЙ */
+.banner {
+  text-align: center;
+}
 .banner-title {
+  margin-top: 0px;
+  margin-bottom: 0px;
   background-color: rgba(47, 48, 58, 0.8);
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  margin-bottom: 30px;
 }
 .banner-btn {
+  min-width: 200px;
+  border-radius: 4px;
+  padding: 10px 32px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.8;
-  /* display: flex;
-  align-items: center;
-  text-align: center; */
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
 
 /*Особенности и сервис*/
-.feature-list .title {
+.feature-section {
+  margin-bottom: 94px;
+}
+.feature.list .title {
+  margin-top: 0px;
+  margin-bottom: 10px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
@@ -98,14 +137,23 @@ a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
+.feature.list p {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 .feature-list .text {
   color: var(--primary-text-color);
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+
+.wwd-section .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+}
 .wwd-section .subtitle {
+  margin-top: 0px;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -118,18 +166,58 @@ a {
 }
 
 /*Команда*/
-.team {
+.team-member {
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+.team-section {
+  padding-top: 90px;
+  padding-bottom: 90px;
   background-color: var(--secondary-grey-color);
 }
-.name {
+.team-section .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--title-text-color);
+}
+
+.subtitle {
+  margin-top: 0px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  text-align: center;
+}
+.team-section .text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  margin-top: 0px;
+  margin-bottom: 16px;
 }
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
 .partners-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+.partners-section .section-title {
+  margin-top: 0px;
+  margin-bottom: 50px;
 }
 
 /* PORTFOLIO CSS */
@@ -202,7 +290,7 @@ a {
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
 }
-.footer .footer-adress {
+.footer .footer-address {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
