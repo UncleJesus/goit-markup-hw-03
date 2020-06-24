@@ -154,14 +154,6 @@ a {
   letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
-.filter-item .text {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.8;
-  letter-spacing: 0.03em;
-  color: var(--primary-text-color);
-}
 .filter-item .filter-text {
   font-style: normal;
   font-weight: normal;
@@ -171,6 +163,15 @@ a {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
+.filter-item .text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+}
+
 /* FOOTER */
 .footer {
   background-color: #2f303a;
