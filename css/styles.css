@@ -13,6 +13,9 @@ body {
   letter-spacing: 0.03em;
 }
 
+img {
+  display: block;
+}
 ul {
   list-style: none;
 }
@@ -179,17 +182,21 @@ a {
 }
 
 /*Команда*/
+
 .team.list {
   display: flex;
 }
 .team-links {
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
 }
 .team-card:not(:last-child) {
-  margin-right: 30;
+  margin-right: 30px;
 }
 .team-member {
   margin-top: 0px;
+  margin-bottom: 30px;
 }
 .team-section {
   padding-top: 90px;
