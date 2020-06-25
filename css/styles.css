@@ -76,7 +76,7 @@ a {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
-.site-cont {
+.site-cont.list {
   margin-left: auto;
   display: flex;
 }
