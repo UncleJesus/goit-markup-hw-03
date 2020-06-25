@@ -19,6 +19,10 @@ a {
   text-decoration: none;
 }
 
+.list {
+  margin: 0px;
+  padding: 0px;
+}
 /* HEADER */
 
 .container {
@@ -29,16 +33,22 @@ a {
 }
 
 /*Навигация*/
+.container.main-nav {
+  display: flex;
+  align-items: center;
+}
 .main-nav {
   display: flex;
   align-items: center;
 }
-.site-nav {
+.site-nav.list {
   display: flex;
+  margin-left: 85px;
 }
 .site-nav .item:not(:last-child) {
   margin-right: 50px;
 }
+
 .site-nav .link {
   display: block;
   padding-top: 32px;
@@ -56,10 +66,6 @@ a {
 .site-nav .current {
   color: var(--accent-color);
 }
-.list {
-  margin: 0px;
-  padding: 0px;
-}
 
 /*Контакты*/
 .site-cont .address {
@@ -71,6 +77,7 @@ a {
   text-decoration: none;
 }
 .site-cont {
+  margin-left: auto;
   display: flex;
 }
 .site-cont .item + .item {
@@ -138,10 +145,21 @@ a {
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
+.feature {
+  display: flex;
+}
 
 .wwd-section .section-title {
   margin-top: 0px;
   margin-bottom: 50px;
+
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 .wwd-section .subtitle {
   margin-top: 0px;
@@ -155,7 +173,12 @@ a {
   color: var(--primary-white-color);
   background-color: rgba(47, 48, 58, 0.8);
 }
-
+.service.list {
+  display: flex;
+}
+.service-item {
+  margin-right: 30px;
+}
 /*Команда*/
 .team-member {
   margin-top: 0px;
