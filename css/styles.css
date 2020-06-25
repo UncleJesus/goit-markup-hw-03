@@ -182,21 +182,29 @@ a {
 }
 
 /*Команда*/
-
+.team-link {
+  text-align: center;
+  width: 44px;
+}
+.team-link:not(:last-child) {
+  margin-right: 10px;
+}
 .team.list {
   display: flex;
+  padding-bottom: 24px;
+  padding-right: 34px;
 }
 .team-links {
   display: flex;
-  margin-right: auto;
-  margin-left: auto;
 }
 .team-card:not(:last-child) {
   margin-right: 30px;
 }
+.team-card-bgc {
+  background-color: var(--primary-white-color);
+}
 .team-member {
   margin-top: 0px;
-  margin-bottom: 30px;
 }
 .team-section {
   padding-top: 90px;
@@ -212,12 +220,12 @@ a {
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
-
   color: var(--title-text-color);
 }
 
 .subtitle {
   margin-top: 0px;
+  padding-top: 30px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -247,7 +255,9 @@ a {
 }
 .partners-section .item {
   width: 170px;
-  outline: 2px solid red;
+  height: 90px;
+  width: 170px;
+  outline: 2px solid var(--primary-text-color);
 }
 .partners-section .item:not(:last-child) {
   margin-right: 30px;
@@ -261,8 +271,17 @@ a {
 .partners-section .section-title {
   margin-top: 0px;
   margin-bottom: 50px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
-
+.partner-img {
+  padding: 20px 63px;
+}
 /* PORTFOLIO CSS */
 .filter .btn {
   font-style: normal;
@@ -308,13 +327,7 @@ a {
   background-color: #2f303a;
 }
 .footer-logo {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: var(--primary-white-color);
+  margin-bottom: 20px;
 }
 .footer .title {
   background-color: #2f303a;
