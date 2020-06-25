@@ -12,6 +12,11 @@ body {
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
 }
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 ul {
   list-style: none;
 }
@@ -28,15 +33,12 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 1170px;
   outline: 2px solid tomato;
 }
 
 /*Навигация*/
-.container.main-nav {
-  display: flex;
-  align-items: center;
-}
+
 .main-nav {
   display: flex;
   align-items: center;
@@ -179,10 +181,20 @@ a {
 .service-item {
   margin-right: 30px;
 }
+
 /*Команда*/
+.team.list {
+  display: flex;
+  margin-right: 30px;
+}
+.team-links {
+  display: flex;
+}
+.team-card:not(:last-child) {
+  margin-right: 30;
+}
 .team-member {
   margin-top: 0px;
-  margin-bottom: 30px;
 }
 .team-section {
   padding-top: 90px;
@@ -223,7 +235,22 @@ a {
   margin-top: 0px;
   margin-bottom: 16px;
 }
+
 /* ПОСТОЯННЫЕ КЛИЕНТЫ */
+.partners-section .list {
+  display: flex;
+}
+.partners-section .section-title {
+  margin-bottom: 50px;
+}
+.partners-section .item {
+  width: 170px;
+  outline: 2px solid red;
+}
+.partners-section .item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .partners-section {
   padding-top: 94px;
   padding-bottom: 94px;
