@@ -181,7 +181,6 @@ a {
 /*Команда*/
 .team.list {
   display: flex;
-  margin-right: 30px;
 }
 .team-links {
   display: flex;
