@@ -289,19 +289,27 @@ a {
 .partner-img {
   padding: 20px 63px;
 }
+
 /* PORTFOLIO CSS */
-.filter .btn {
-  font-style: normal;
+.btn-portf {
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+.btn-text:hover,
+.btn-text:focus {
+  color: var(--accent-color);
+}
+.btn-text {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.6;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-.filter .btn:hover,
-.filter .btn:focus {
-  color: var(--accent-color);
 }
 .filter-item .title {
   font-style: normal;
@@ -327,6 +335,41 @@ a {
   line-height: 1.8;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+}
+
+.main-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button-portfolio.list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.filter-btn:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filter-items {
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.filter-item {
+  width: calc((100% - 60px) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+  list-style: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.filter-item .link {
+  border-radius: 5px 5px 0px 0px;
+  display: block;
 }
 
 /* FOOTER */
