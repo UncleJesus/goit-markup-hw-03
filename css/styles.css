@@ -32,8 +32,9 @@ a {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
-  outline: 2px solid tomato;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*Навигация*/
@@ -92,12 +93,15 @@ a {
 
 /* БЛОК ГЕРОЙ */
 .banner {
+  background-color: var(--primary-text-color);
+  min-height: 600px;
   text-align: center;
 }
+
 .banner-title {
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: rgba(47, 48, 58, 0.8);
+
   color: var(--primary-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -121,7 +125,10 @@ a {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
-
+.centered-banner {
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
 /*Особенности и сервис*/
 .feature-section {
   margin-bottom: 94px;
@@ -329,7 +336,7 @@ a {
 .footer-logo {
   margin-bottom: 20px;
 }
-.footer .title {
+.call-to-action {
   background-color: #2f303a;
   color: var(--primary-white-color);
   font-weight: 700;
@@ -337,6 +344,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 21px;
 }
 .footer .footer-text {
   font-style: normal;
@@ -345,8 +353,11 @@ a {
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--primary-white-color);
+  margin-top: 0px;
+  margin-bottom: 9px;
 }
-.footer .footer-address {
+.footer-address-email,
+.footer-address-phone {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
@@ -354,10 +365,39 @@ a {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
+.footer-address-email {
+  margin-bottom: 9px;
+}
 .bottom {
   font-weight: 400;
   font-size: 12px;
   line-height: 2;
   text-align: center;
   letter-spacing: 0.03em;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+.footer-join {
+  display: flex;
+  flex-direction: column;
+}
+.call-to-action-list-flex.list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-left: 0px;
+}
+.social-link-li:not(:last-child) {
+  margin-right: 20px;
+}
+
+.subscript-footer {
+  display: flex;
+  flex-direction: column;
 }
